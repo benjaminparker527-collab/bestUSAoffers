@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>USA Exclusive Deals | CashApp $850, Zelle $750 & More</title>
+  <meta name="description" content="Limited USA offers: Get $850 CashApp, $750 Zelle, Royal Cruise $100, Netflix $100 CPL, Family Dollar $500, Walmart $1000, American Eagle $100. Claim now!">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #f0f4ff 0%, #e6edf9 100%);
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, 'Helvetica Neue', sans-serif;
+      padding: 2rem 1.5rem;
+      color: #1a2a3f;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* header / badge */
+    .flag-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #ffffffdd;
+      backdrop-filter: blur(4px);
+      padding: 6px 18px;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      margin-bottom: 1.8rem;
+    }
+    .flag-badge span {
+      font-size: 1.2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #022b49, #0a5c8e);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+    .subhead {
+      font-size: 1.2rem;
+      color: #2c4b6e;
+      margin-bottom: 2.5rem;
+      border-left: 4px solid #f5b042;
+      padding-left: 1rem;
+      font-weight: 500;
+    }
+    /* grid cards */
+    .offers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 1.8rem;
+      margin: 2rem 0 2.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.12);
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(0px);
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 36px -14px rgba(0, 0, 0, 0.2);
+    }
+    .card-header {
+      padding: 1.6rem 1.5rem 0.8rem;
+      border-bottom: 2px solid #f0f2f8;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-icon {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+    .amount {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(125deg, #004e7c, #0185b3);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .card-content {
+      padding: 1rem 1.5rem 1.2rem;
+      flex-grow: 1;
+    }
+    .offer-title {
+      font-size: 1.65rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .offer-desc {
+      color: #4a5b72;
+      margin-bottom: 1.4rem;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .badge {
+      background: #eef2ff;
+      padding: 4px 12px;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #005e99;
+      letter-spacing: 0.3px;
+    }
+    .btn-claim {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background: #000000dd;
+      background: linear-gradient(98deg, #13294b, #1a4b6e);
+      color: white;
+      font-weight: 700;
+      padding: 14px 12px;
+      border-radius: 48px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s;
+      margin-top: 0.4rem;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 12px -8px rgba(0,0,0,0.2);
+      letter-spacing: 0.3px;
+    }
+    .btn-claim:hover {
+      background: linear-gradient(98deg, #0a1e38, #0f4870);
+      transform: scale(0.98);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .fine-print {
+      font-size: 0.7rem;
+      text-align: center;
+      margin-top: 1rem;
+      color: #6c7e99;
+      padding: 0 0.2rem;
+    }
+    .disclaimer-box {
+      background: #ffffffcc;
+      backdrop-filter: blur(4px);
+      border-radius: 28px;
+      padding: 1.2rem 1.8rem;
+      margin-top: 2rem;
+      text-align: center;
+      border: 1px solid #ffffffaa;
+      font-size: 0.75rem;
+      color: #2c3f55;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #4b6589;
+      font-size: 0.75rem;
+      border-top: 1px solid #cbdae9;
+      padding-top: 2rem;
+    }
+    @media (max-width: 760px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .offers-grid {
+        gap: 1.2rem;
+      }
+      .card-header {
+        padding: 1.2rem 1rem 0.5rem;
+      }
+      .offer-title {
+        font-size: 1.4rem;
+      }
+    }
+    .urgent-tag {
+      background: #ffeed9;
+      padding: 8px 16px;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .highlight {
+      color: #c7452c;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="flag-badge">
+    <span>🇺🇸</span> <span>USA EXCLUSIVE OFFERS</span> <span>🎯</span>
+  </div>
+  <h1>Claim Your <span style="background: linear-gradient(135deg,#c96400,#f5a623); -webkit-background-clip:text; background-clip:text; color:transparent;">Limited USA Rewards</span></h1>
+  <div class="subhead">
+    Verified promotions for CashApp, Zelle, Walmart & more. Hurry – supplies limited for US residents.
+  </div>
+  <div class="urgent-tag">
+    🔥 Today's top picks: <span class="highlight">CashApp $850</span> • <span class="highlight">Zelle $750</span> • Walmart $1k
+  </div>
+
+  <div class="offers-grid">
+    <!-- CashApp $850 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">💰 CashApp</div>
+        <div class="amount">$850</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">CashApp Friday Boost <span class="badge">INSTANT</span></div>
+        <div class="offer-desc">Get $850 instantly credited when you verify your US account. Limited slots for active users. Don't miss out!</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/5JY122KX/?s1=kilo" class="btn-claim" target="_blank" rel="noopener noreferrer">Claim $850 Now →</a>
+        <div class="fine-print">✔ USA only • Terms apply</div>
+      </div>
+    </div>
+
+    <!-- Zelle $750 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">🏦 Zelle®</div>
+        <div class="amount">$750</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">Zelle Rewards Program <span class="badge">FAST</span></div>
+        <div class="offer-desc">Zelle partner promotion: $750 bonus for qualified participants. Verified link for US bank users.</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/8LP123XC/?s1=kio" class="btn-claim" target="_blank" rel="noopener noreferrer">Get $750 Bonus →</a>
+        <div class="fine-print">✔ Must have active Zelle account</div>
+      </div>
+    </div>
+
+    <!-- Walmart $1,000 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">🛒 Walmart</div>
+        <div class="amount">$1,000</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">Walmart Plus Giveaway</div>
+        <div class="offer-desc">Enter for a chance to claim $1,000 Walmart eGift card. USA shoppers only. Limited time event.</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/T6M12294/?s1=Sus" class="btn-claim" target="_blank" rel="noopener noreferrer">Claim $1,000 →</a>
+        <div class="fine-print">Sponsored reward • Direct link</div>
+      </div>
+    </div>
+
+    <!-- Family Dollar $500 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">🏪 Family Dollar</div>
+        <div class="amount">$500</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">Family Dollar Survey Rewards</div>
+        <div class="offer-desc">Get $500 store credit + cashback when you complete the quick US offer. Verified partner link.</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/TTR12295/?s1=oppa" class="btn-claim" target="_blank" rel="noopener noreferrer">Activate $500 →</a>
+        <div class="fine-print">Limited to 1000 participants</div>
+      </div>
+    </div>
+
+    <!-- Netflix $100 - CPL -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">🎬 Netflix</div>
+        <div class="amount">$100</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">Netflix CPL Voucher <span class="badge">CPL</span></div>
+        <div class="offer-desc">Earn $100 digital gift card after completing simple steps. Works for US subscribers & new users.</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/KDQ122LY/?s1=kio" class="btn-claim" target="_blank" rel="noopener noreferrer">Get $100 Netflix →</a>
+        <div class="fine-print">Cost Per Lead • US only</div>
+      </div>
+    </div>
+
+    <!-- Royal Cruise $100 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">🚢 Royal Cruise</div>
+        <div class="amount">$100</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">Royal Caribbean Onboard Credit</div>
+        <div class="offer-desc">$100 cruise credit for new bookings. Limited time exclusive for US residents.</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/R98122L2/?s1=kio" class="btn-claim" target="_blank" rel="noopener noreferrer">Claim $100 Cruise Credit →</a>
+        <div class="fine-print">Terms & eligibility apply</div>
+      </div>
+    </div>
+
+    <!-- American Eagle $100 -->
+    <div class="card">
+      <div class="card-header">
+        <div class="brand-icon">🦅 American Eagle</div>
+        <div class="amount">$100</div>
+      </div>
+      <div class="card-content">
+        <div class="offer-title">AE Style Rewards</div>
+        <div class="offer-desc">$100 e-gift card for American Eagle shoppers. Complete the fast verification to redeem.</div>
+        <a href="https://www.af9m8trk.com/J6H116EG/MJP12296/?s1=kkk" class="btn-claim" target="_blank" rel="noopener noreferrer">Unlock $100 AE →</a>
+        <div class="fine-print">Limited USA exclusive drop</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- extra limited section: CTA reminder -->
+  <div class="disclaimer-box">
+    <div style="font-weight: 700; margin-bottom: 6px;">🇺🇸 WHY THESE USA OFFERS ARE TRENDING 🇺🇸</div>
+    <div style="font-size: 0.85rem;">Verified partners: CashApp Boost, Zelle RewardZone, Walmart App Rewards, Family Dollar & Netflix CPL. All links are tracked and exclusive to our USA audience. Each offer has limited capacity — first come, first served.</div>
+    <div style="margin-top: 14px; font-size: 0.7rem;">⚠️ Must be 18+ and legal US resident. Individual terms from each brand apply. This is an advertisement for promotional rewards.</div>
+  </div>
+
+  <!-- small extra row of quick access -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 24px 0 12px;">
+    <span style="background: #fff0df; padding: 5px 16px; border-radius: 50px; font-size:0.75rem;">✅ CashApp $850</span>
+    <span style="background: #fff0df; padding: 5px 16px; border-radius: 50px; font-size:0.75rem;">✅ Zelle $750</span>
+    <span style="background: #fff0df; padding: 5px 16px; border-radius: 50px; font-size:0.75rem;">✅ Walmart $1K</span>
+    <span style="background: #fff0df; padding: 5px 16px; border-radius: 50px; font-size:0.75rem;">✅ Netflix $100 CPL</span>
+  </div>
+
+  <footer>
+    <p>© 2025 USA Exclusive Rewards Hub. This landing page is for marketing purposes only. All trademarks are property of their respective owners. Offers may change without notice.</p>
+    <p style="margin-top: 8px;">🔒 Secure tracking links | USA geo-targeted | Support: support@usamarketingdeals.com</p>
+  </footer>
+</div>
+
+<!-- optional micro script for link click tracking (console log for transparency) -->
+<script>
+  (function() {
+    // simple outbound click logger - enhances marketing but does not interfere
+    const allLinks = document.querySelectorAll('.btn-claim');
+    allLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('https://www.af9m8trk.com')) {
+          // just for demo: console logs click event for internal analytics
+          console.log(`[USA LP] Click tracked: ${href.substring(0, 70)}...`);
+          // optional performance: no interruption, link works natively
+        }
+      });
+    });
+    // small dynamic timestamp for urgency (optional)
+    const urgentDiv = document.querySelector('.urgent-tag');
+    if(urgentDiv){
+      const now = new Date();
+      const options = { month: 'short', day: 'numeric' };
+      const dateStr = now.toLocaleDateString('en-US', options);
+      // adds a subtle hint: "updated today"
+      const spanMark = document.createElement('span');
+      spanMark.style.marginLeft = '8px';
+      spanMark.style.fontSize = '0.7rem';
+      spanMark.style.backgroundColor = '#ffe6c2';
+      spanMark.style.padding = '2px 8px';
+      spanMark.style.borderRadius = '24px';
+      spanMark.innerText = `updated ${dateStr}`;
+      urgentDiv.appendChild(spanMark);
+    }
+    // additional geo hint - just visual
+    const footer = document.querySelector('footer p:first-child');
+    if(footer) {
+      // no changes, it's fine
+    }
+  })();
+</script>
+</body>
+</html>
